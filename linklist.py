@@ -12,8 +12,10 @@ class LinkList:
         self.head = None
         self.n = 0
 
+
     def __len__(self):
         return self.n
+
 
     def insert_head(self, data):
         new_node = Node(data)
@@ -22,6 +24,11 @@ class LinkList:
         self.n = self.n + 1
 
     def insert_tail(self, data):
+        if self.head == None:
+            new_node = Node(data)
+            self.head = new_node
+            self.n = self.n + 1
+            return 
         new_node = Node(data)
         new_node.next = None
         curr = self.head
@@ -31,6 +38,7 @@ class LinkList:
         
         curr.next = new_node
         self.n = self.n + 1
+
 
     def __str__(self):
         curr = self.head
@@ -44,8 +52,9 @@ class LinkList:
 n = LinkList()
 n.insert_head(5)
 n.insert_head(6)
-n.insert_head(7)
 n.insert_tail(8)
+n.insert_tail(9)
 
 print(n)
 print(f"Number of nodes: {len(n)}")
+
