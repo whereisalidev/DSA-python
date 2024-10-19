@@ -39,6 +39,19 @@ class LinkList:
         curr.next = new_node
         self.n = self.n + 1
 
+    def insert_after(self, after, data):
+        new_node = Node(data)
+        curr = self.head
+        while curr != None and curr.data != after:
+            curr = curr.next
+
+        if curr == None:
+            print(f"Number {after} not found in this linked list")
+            return
+            
+        new_node.next = curr.next
+        curr.next = new_node
+        self.n = self.n + 1
 
     def __str__(self):
         curr = self.head
@@ -50,10 +63,12 @@ class LinkList:
 
 
 n = LinkList()
-n.insert_head(5)
-n.insert_head(6)
+# n.insert_head(5)
+# n.insert_head(6)
 n.insert_tail(8)
 n.insert_tail(9)
+n.insert_tail(10)
+n.insert_after(9, 100)
 
 print(n)
 print(f"Number of nodes: {len(n)}")
