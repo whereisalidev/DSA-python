@@ -15,13 +15,11 @@ class LinkList:
     def __len__(self):
         return self.n
 
-
     def insert_head(self, data):
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
         self.n = self.n + 1
-
 
     def insert_tail(self, data):
         new_node = Node(data)
@@ -33,7 +31,6 @@ class LinkList:
         
         curr.next = new_node
         self.n = self.n + 1
-
 
     def __str__(self):
         curr = self.head
