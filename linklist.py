@@ -112,7 +112,8 @@ n.insert_tail(10)
 # n.clear()
 # n.delete_head()
 n.delete_tail()
-
+# n.delete_tail()
+# n.delete_tail()
 
 print(n)
 
