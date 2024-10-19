@@ -81,6 +81,15 @@ class LinkList:
         self.head = self.head.next
         del temp
 
+    def delete_tail(self):
+        if self.head == None:
+            print("List is empty")
+            return
+        curr = self.head
+        
+
+
+
 
 n = LinkList()
 # n.insert_head(5)
