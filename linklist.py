@@ -85,8 +85,19 @@ class LinkList:
         if self.head == None:
             print("List is empty")
             return
-        curr = self.head
         
+        if self.head.next == None: #means we ahve only 1 node:
+            return self.delete_head()    
+        
+        curr = self.head
+        while curr.next.next != None:
+            curr = curr.next
+
+        temp = curr.next
+        curr.next = None
+        del temp
+        
+         
 
 
 
@@ -99,7 +110,9 @@ n.insert_tail(9)
 n.insert_tail(10)
 # n.insert_after(9, 100)
 # n.clear()
-n.delete_head()
+# n.delete_head()
+n.delete_tail()
+
 
 print(n)
 
