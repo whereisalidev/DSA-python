@@ -62,26 +62,32 @@ class LinkList:
         return result[:-2]
     
     def clear(self):
+
         curr = self.head
         while curr != None:
             temp = curr.next
             del curr
             curr = temp
-
-            
-            
         self.head = None
         self.n = 0
+
+    def delete_head(self):
+        if self.head == None:
+            print("List is empty")
+        temp = self.head
+        self.head = self.head.next
+        del temp
 
 
 n = LinkList()
 # n.insert_head(5)
 # n.insert_head(6)
-n.insert_tail(8)
-n.insert_tail(9)
-n.insert_tail(10)
-n.insert_after(9, 100)
+# n.insert_tail(8)
+# n.insert_tail(9)
+# n.insert_tail(10)
+# n.insert_after(9, 100)
 n.clear()
+# n.delete_head()
 
 print(n)
 print(f"Number of nodes: {len(n)}")
