@@ -60,6 +60,18 @@ class LinkList:
             result = result + str(curr.data) + '->'
             curr = curr.next
         return result[:-2]
+    
+    def clear(self):
+        curr = self.head
+        while curr != None:
+            temp = curr.next
+            del curr
+            curr = temp
+
+            
+            
+        self.head = None
+        self.n = 0
 
 
 n = LinkList()
@@ -69,6 +81,7 @@ n.insert_tail(8)
 n.insert_tail(9)
 n.insert_tail(10)
 n.insert_after(9, 100)
+n.clear()
 
 print(n)
 print(f"Number of nodes: {len(n)}")
