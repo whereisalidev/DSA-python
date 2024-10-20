@@ -96,6 +96,9 @@ class LinkList:
         temp = curr.next
         curr.next = None
         del temp
+
+    def delete_value(self, value):
+        
         
          
 
