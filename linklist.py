@@ -98,27 +98,44 @@ class LinkList:
         del temp
 
     def delete_value(self, value):
+        if self.head == None:  
+            print("List is empty")
+            return
+        if self.head.data == value:  #if list has only one node or the value is in first node
+            return self.delete_head()
         
+        curr = self.head
+        while curr.next != None:
+            if curr.next.data == value:
+                break
+            curr = curr.next
+
+        if curr.next == None:
+            print("Value not found")
+            return
+        temp = curr.next
+        curr.next = curr.next.next
+        del temp
+
+
+
+
+
         
-         
-
-
-
 
 n = LinkList()
 # n.insert_head(5)
 # n.insert_head(6)
 n.insert_tail(8)
-n.insert_tail(9)
-n.insert_tail(10)
+# n.insert_tail(9)
+# n.insert_tail(10)
 # n.insert_after(9, 100)
 # n.clear()
 # n.delete_head()
-n.delete_tail()
 # n.delete_tail()
-# n.delete_tail()
+n.delete_value(8)
 
 print(n)
 
 
-# print(f"Number of nodes: {len(n)}")
+print(f"Number of nodes: {len(n)}")
