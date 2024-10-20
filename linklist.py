@@ -118,6 +118,19 @@ class LinkList:
         del temp
 
 
+    def search_value(self, value):
+        curr = self.head
+        pos = 0
+        while curr != None:
+            if curr.data == value:
+                print(f"Value found at index {pos}")
+                return
+            curr = curr.next
+            pos = pos+1
+        print("Value not found")
+            
+
+
 
 
 
@@ -127,15 +140,16 @@ n = LinkList()
 # n.insert_head(5)
 # n.insert_head(6)
 n.insert_tail(8)
-# n.insert_tail(9)
-# n.insert_tail(10)
+n.insert_tail(9)
+n.insert_tail(11)
 # n.insert_after(9, 100)
 # n.clear()
 # n.delete_head()
 # n.delete_tail()
-n.delete_value(8)
+# n.delete_value(8)
+n.search_value(8)
 
 print(n)
 
 
-print(f"Number of nodes: {len(n)}")
+# print(f"Number of nodes: {len(n)}")
