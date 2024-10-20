@@ -201,7 +201,7 @@ class LinkedList:
             temp = temp.next
         max.data = value
 
-    #Write a method to find the sum of digits at odd positions in a linkedlist:
+    # Write a method to find the sum of digits at odd positions in a linkedlist:
     def sum_of_digits(self):
         curr = self.head
         counter = 0
@@ -213,6 +213,11 @@ class LinkedList:
             curr = curr.next
             
         print(f"Sum = {sum}")
+
+    # Write a program to reverse a linkedlist 
+    # e.g; (before) 2->4->6   (after) 6->4->2
+    def reverse(self):
+        
 
 
 
