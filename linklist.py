@@ -201,13 +201,17 @@ class LinkedList:
             temp = temp.next
         max.data = value
 
+    #Write a method to find the sum of digits at odd positions in a linkedlist:
+    # def sum_of_digits(self):
+
+
 
 
 l = LinkedList()
 l.insert_head(4)
 l.insert_head(8)
 l.insert_head(2)
-l.insert_head(11)
-l.replace_max()
+l.insert_head(0)
+# l.replace_max(100)
 print(l)
             
