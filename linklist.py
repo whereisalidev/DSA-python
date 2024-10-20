@@ -1,3 +1,4 @@
+"""
 #LinkedList:
 #Singly Linked List:
 
@@ -151,18 +152,17 @@ class LinkList:
 n = LinkList()
 # n.insert_head(5)
 # n.insert_head(6)
-n.insert_tail(8)
-n.insert_tail(9)
-n.insert_tail(11)
+# n.insert_tail(8)
+# n.insert_tail(9)
+# n.insert_tail(11)
 # n.insert_after(9, 100)
 # n.clear()
 # n.delete_head()
 # n.delete_tail()
 # n.delete_value(8)
 # n.search_value(8)
-n.search_by_index(3)
-
-print(n)
-
+# n.search_by_index(3)
 
 # print(f"Number of nodes: {len(n)}")
+print(n)
+"""
