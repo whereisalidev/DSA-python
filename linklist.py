@@ -1,4 +1,5 @@
 #LinkedList:
+#Singly Linked List:
 
 class Node:
     def __init__(self, data):
@@ -118,7 +119,7 @@ class LinkList:
         del temp
 
 
-    def search_value(self, value):
+    def search_by_value(self, value):
         curr = self.head
         pos = 0
         while curr != None:
@@ -128,7 +129,18 @@ class LinkList:
             curr = curr.next
             pos = pos+1
         print("Value not found")
-            
+
+    def search_by_index(self, index):
+        curr = self.head
+        pos = 0
+        while curr != None:
+            if pos == index:
+                print(f"{curr.data} value in at index {pos}")
+                return
+            curr = curr.next
+            pos = pos + 1
+        
+        print(f"Index is out of range of list")
 
 
 
@@ -147,7 +159,8 @@ n.insert_tail(11)
 # n.delete_head()
 # n.delete_tail()
 # n.delete_value(8)
-n.search_value(8)
+# n.search_value(8)
+n.search_by_index(3)
 
 print(n)
 
