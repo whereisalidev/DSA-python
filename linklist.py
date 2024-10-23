@@ -178,10 +178,19 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
-    def insert_head(self, data):
+    def insert_end(self, data):
+        if self.head == None:
+            new_node = Node(data)
+            self.head = new_node
+            return 
         new_node = Node(data)
-        new_node.next = self.head
-        self.head = new_node
+        new_node.next = None
+        curr = self.head
+
+        while curr.next != None:
+            curr = curr.next
+        
+        curr.next = new_node
     def __str__(self):
         curr = self.head
         result = ''
@@ -229,6 +238,14 @@ class LinkedList:
     #Write a func:
     #The/*sky*is//blue -> The Sky is Blue 
     def my_func(self):
+        curr = self.head
+
+        while curr.next != None:
+            # if curr.data == '/' and curr.
+            if curr.data == '/' or curr.data == '*':
+                curr.data = ' '
+            curr = curr.next
+        
 
 
 
@@ -257,6 +274,7 @@ l.insert_end('u')
 l.insert_end('e')
 # l.replace_max(100)
 # l.sum_of_digits()
-l.reverse()
+# l.reverse()
+l.my_func()
 print(l)
             
