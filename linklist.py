@@ -236,14 +236,17 @@ class LinkedList:
         self.head = prev_node
 
     #Write a func:
+    #if one / or * then single space
     #The/*sky*is//blue -> The Sky is Blue 
     def my_func(self):
         curr = self.head
 
         while curr.next != None:
-            # if curr.data == '/' and curr.
             if curr.data == '/' or curr.data == '*':
                 curr.data = ' '
+                if curr.next.data == '/' or curr.next.data == '*':
+                    curr.next.next.data = curr.next.next.data.upper()
+                    curr.next = curr.next.next
             curr = curr.next
         
 
