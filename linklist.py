@@ -236,7 +236,8 @@ class LinkedList:
         self.head = prev_node
 
     #Write a func:
-    #if one / or * then single space
+    #if single / or * then single space
+    #if any one both (//, /*, **, */) then single space but next letter Capitalized
     #The/*sky*is//blue -> The Sky is Blue 
     def my_func(self):
         curr = self.head
