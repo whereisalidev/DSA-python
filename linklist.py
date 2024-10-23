@@ -216,6 +216,20 @@ class LinkedList:
 
     # Write a program to reverse a linkedlist 
     # e.g; (before) 2->4->6   (after) 6->4->2
+    def reverse(self):
+        prev_node = None
+        curr_node = self.head
+        while curr_node != None:
+            next_node = curr_node.next
+            curr_node.next = prev_node
+            prev_node = curr_node 
+            curr_node = next_node
+        self.head = prev_node
+
+    #Write a func:
+    #The/*sky*is//blue -> The Sky is Blue 
+    def my_func(self):
+
 
         
 
@@ -223,13 +237,11 @@ class LinkedList:
 
 
 l = LinkedList()
-l.insert_head(4)
-l.insert_head(8)
+l.insert_head(1)
 l.insert_head(2)
-l.insert_head(8)
-l.insert_head(9)
-l.insert_head(10 )
+l.insert_head(3)
 # l.replace_max(100)
-l.sum_of_digits()
+# l.sum_of_digits()
+l.reverse()
 print(l)
             
