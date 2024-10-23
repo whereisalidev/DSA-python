@@ -231,15 +231,30 @@ class LinkedList:
     def my_func(self):
 
 
+
         
 
 
 
 
 l = LinkedList()
-l.insert_head(1)
-l.insert_head(2)
-l.insert_head(3)
+l.insert_end('T')
+l.insert_end('h')
+l.insert_end('e')
+l.insert_end('/')
+l.insert_end('*')
+l.insert_end('s')
+l.insert_end('k')
+l.insert_end('y')
+l.insert_end('*')
+l.insert_end('i')
+l.insert_end('s')
+l.insert_end('/')
+l.insert_end('/')
+l.insert_end('b')
+l.insert_end('l')
+l.insert_end('u')
+l.insert_end('e')
 # l.replace_max(100)
 # l.sum_of_digits()
 l.reverse()
