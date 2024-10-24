@@ -20,13 +20,14 @@ class Stack:
     
     def push(self, data):
         new_node = Node(data)
-        if self.is_empty:
-            self.top = new_node
-            return
         new_node.next = self.top
         self.top = new_node
     
 
 
 s = Stack()
-print(s.is_empty())
+s.push(1)
+s.push(2)
+s.push(3)
+s.traverse()
+# print(s.is_empty())
