@@ -74,4 +74,21 @@ class Stack:
     # input: Hello, output: olleH
     # using Stacks
 
-    def
+    def reverse(self, str):
+        for i in str:
+            new_node = Node(i)
+            new_node.next = self.top
+            self.top = new_node
+        curr = self.top
+        result = ''
+        while curr != None:
+            result = result + curr.data 
+            curr = curr.next
+        return result
+                
+
+
+
+
+s = Stack()
+print(s.reverse('Hello'))
