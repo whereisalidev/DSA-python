@@ -24,7 +24,10 @@ class Stack:
         self.top = new_node
 
     def peek(self):
-        
+        if self.is_empty:
+            return "Stack si Empty"
+        else:
+            return self.top.data
     
 
 
