@@ -28,6 +28,9 @@ class Stack:
             return "Stack si Empty"
         else:
             return self.top.data
+        
+    def pop(self):
+        
     
 
 
