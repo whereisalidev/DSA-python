@@ -70,3 +70,8 @@ class Stack:
 
     def is_empty(self):
         return self.top==None
+    
+    # input: Hello, output: olleH
+    # using Stacks
+
+    def
