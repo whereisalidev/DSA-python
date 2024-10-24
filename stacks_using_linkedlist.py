@@ -10,7 +10,10 @@ class Stack:
         self.top = None
     
     def traverse(self):
-        
+        curr = self.top
+        while curr != None:
+            print(curr.data)
+            curr = curr.next
 
     def is_empty(self):
         return self.top==None
@@ -25,3 +28,5 @@ class Stack:
     
 
 
+s = Stack()
+print(s.is_empty())
