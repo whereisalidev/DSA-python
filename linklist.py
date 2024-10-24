@@ -1,4 +1,3 @@
-"""
 #LinkedList:
 #Singly Linked List:
 
@@ -14,10 +13,8 @@ class LinkList:
         self.head = None
         self.n = 0
 
-
     def __len__(self):
         return self.n
-
 
     def insert_head(self, data):
         new_node = Node(data)
@@ -165,7 +162,11 @@ n = LinkList()
 
 # print(f"Number of nodes: {len(n)}")
 print(n)
-"""
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 # PRACTICE PROBLEMS: LINKEDLIST
