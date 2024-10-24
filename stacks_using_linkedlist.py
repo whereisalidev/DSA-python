@@ -13,4 +13,6 @@ class Stack:
         return self.top==None
     
     def push(self, data):
+        new_node = Node(data)
         
+
