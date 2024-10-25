@@ -59,10 +59,19 @@ class Stack:
         # creating two stacks; undo stack and redo stack
         u = Stack()
         r = Stack()
+        for i in str:
+            u.push(i)
 
+        for i in pattern:
+            if i == 'u':
+                r.push(u.pop())
+            else:
+                u.push(r.pop())
+
+        
     
 
                 
 
 s = Stack()
-print(s.reverse('Hello'))
+# print(s.reverse('Hello'))
