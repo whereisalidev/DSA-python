@@ -57,7 +57,9 @@ class Stack:
     #str=Pak , pattern=uru => result = Pa
     def text_editor(self, str, pattern):
         # creating two stacks; undo stack and redo stack
-        
+        u = Stack()
+        r = Stack()
+
     
 
                 
