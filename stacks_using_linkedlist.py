@@ -81,3 +81,4 @@ class Stack:
 s = Stack()
 # print(s.reverse('Hello'))
 # print(s.traverse())
+# print(s.text_editor('Pak', 'uur'))
