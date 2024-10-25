@@ -68,6 +68,11 @@ class Stack:
             else:
                 u.push(r.pop())
 
+        res = ''
+        while not u.is_empty():
+            res = u.pop() + res
+        return res
+
         
     
 
@@ -75,3 +80,4 @@ class Stack:
 
 s = Stack()
 # print(s.reverse('Hello'))
+# print(s.traverse())
