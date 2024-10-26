@@ -68,7 +68,7 @@ class Stack:
             else:
                 u.push(r.pop())
 
-        res = ''
+        res = '' 
         while not u.is_empty():
             res = u.pop() + res
         return res
