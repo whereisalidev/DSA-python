@@ -84,6 +84,8 @@ class Stack:
         # #is the brackets opening, closing right? No -> return False
         #input : mathematical expression [[(a+b)]] 
         # #is the brackets opening, closing right? Yes -> return True
+        def correct_brackets(self, str):
+            pass
 
         
     
