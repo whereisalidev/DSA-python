@@ -74,8 +74,9 @@ class Stack:
         return res
 
 
-        #Stacks Celebrity problem:
-        []
+        #Stacks Celebrity problem: (input: Matrix of A, B, C, D) #important
+        def find_celebrity(self, matrix):
+            pass
 
         
     
