@@ -73,6 +73,10 @@ class Stack:
             res = u.pop() + res
         return res
 
+
+        #Stacks Celebrity problem:
+        []
+
         
     
 
