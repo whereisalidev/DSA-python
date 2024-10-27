@@ -78,6 +78,13 @@ class Stack:
         def find_celebrity(self, matrix):
             pass
 
+
+        #Balanced Brackets Problem: using stacks
+        #input : mathematical expression [[(a+b)] 
+        # #is the brackets opening, closing right? No -> return False
+        #input : mathematical expression [[(a+b)]] 
+        # #is the brackets opening, closing right? Yes -> return True
+
         
     
 
