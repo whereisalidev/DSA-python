@@ -96,6 +96,34 @@ class LinkList:
         curr.next = None
         del temp
 
+    def delete_mid(self):
+        if self.head == None:
+            print("empty Linked List")
+            return
+        elif self.head.next == None:
+            print("There is only one node in LinkedList")
+            return 
+
+        count = 0
+        curr = self.head
+        curr2 = self.head
+
+        while curr != None:
+            count = count + 1
+            curr = curr.next
+        # print(count)
+        mid = count/2
+
+        for i in range(int(mid-1)):
+            curr2 = curr2.next
+
+        curr2.next = curr2.next.next
+        
+
+
+
+        
+
     def delete_value(self, value):
         if self.head == None:  
             print("List is empty")
@@ -149,9 +177,11 @@ class LinkList:
 n = LinkList()
 # n.insert_head(5)
 # n.insert_head(6)
-# n.insert_tail(8)
-# n.insert_tail(9)
-# n.insert_tail(11)
+# n.insert_head(7)
+n.insert_tail(9)
+n.insert_tail(10)
+n.insert_tail(11)
+n.delete_mid()
 # n.insert_after(9, 100)
 # n.clear()
 # n.delete_head()
@@ -166,7 +196,7 @@ print(n)
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+'''
 
 
 # PRACTICE PROBLEMS: LINKEDLIST
@@ -283,3 +313,4 @@ l = LinkedList()
 l.my_func()
 print(l)
             
+'''
