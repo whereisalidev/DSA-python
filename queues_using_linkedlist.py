@@ -46,11 +46,19 @@ class Queue:
             temp = temp.next
         return f"Size = {counter}"
     
-    def front(self):
+    def front_item(self):
         if self.front == None:
             return "Queue is empty"
         else:
-            return self.front.data
+            return f"Front item = {self.front.data}"
+        
+    def rear_item(self):
+        if self.front == None:
+            return "Queue is empty"
+        else:
+            return f"Rear item = {self.rear.data}"
+    
+        
 
 
 
@@ -60,4 +68,11 @@ q.enqueue(5)
 q.enqueue(7)
 # q.dequeue()
 q.traverse()
+print(q.front_item())
+print(q.rear_item())
 print(q.size())
+
+# _____________________________________________________________________________________
+
+# Famous interview question:
+# Implement Queue using two stacks
