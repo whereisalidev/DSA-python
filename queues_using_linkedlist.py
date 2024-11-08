@@ -19,3 +19,21 @@ class Queue:
         else:
             self.rear.next = new_node
             self.rear = new_node
+
+    def dequeue(self):
+        if self.front == None:
+            print('Queue is Empty')
+        else:
+            self.front = self.front.next
+
+    def traverse(self):
+        temp = self.front
+        while temp != None:
+            print(temp.data)
+            temp = temp.next
+            
+
+
+
+q = Queue()
+q.enqueue(5)
