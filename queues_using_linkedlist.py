@@ -32,6 +32,22 @@ class Queue:
             print(temp.data)
             temp = temp.next
 
+    def is_empty(self):
+        if self.front == None:
+            print('Queue is empty')
+        else:
+            print('Queue is Not empty')
+
+    def size(self):
+        temp = self.front
+        counter = 0
+        while temp != None:
+            counter = counter + 1
+            temp = temp.next
+        return f"Size = {counter}"
+    
+    def front(self)
+
 
 
 
@@ -40,3 +56,4 @@ q.enqueue(5)
 q.enqueue(7)
 # q.dequeue()
 q.traverse()
+print(q.size())
