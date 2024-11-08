@@ -13,4 +13,9 @@ class Queue:
     
     def enqueue(self, value):
         new_node = Node(value)
-        
+        if self.rear == None:
+            self.front = new_node
+            self.rear = new_node
+        else:
+            self.rear.next = new_node
+            self.rear = new_node
