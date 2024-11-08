@@ -10,3 +10,7 @@ class Queue:
     def __init__(self):
         self.front = None
         self.rear = None
+    
+    def enqueue(self, value):
+        new_node = Node(value)
+        
