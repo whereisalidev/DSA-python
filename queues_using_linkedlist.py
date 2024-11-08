@@ -31,9 +31,12 @@ class Queue:
         while temp != None:
             print(temp.data)
             temp = temp.next
-            
+
 
 
 
 q = Queue()
 q.enqueue(5)
+q.enqueue(7)
+# q.dequeue()
+q.traverse()
