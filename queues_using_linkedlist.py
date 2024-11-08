@@ -46,7 +46,11 @@ class Queue:
             temp = temp.next
         return f"Size = {counter}"
     
-    def front(self)
+    def front(self):
+        if self.front == None:
+            return "Queue is empty"
+        else:
+            return self.front.data
 
 
 
