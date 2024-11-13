@@ -44,7 +44,7 @@ class Queue:
         while temp != None:
             counter = counter + 1
             temp = temp.next
-        return f"Size = {counter}"
+        return f"Size = {counter}" 
     
     def front_item(self):
         if self.front == None:
